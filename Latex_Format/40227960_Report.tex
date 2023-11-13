@@ -1,62 +1,107 @@
-% This is samplepaper.tex, a sample chapter demonstrating the
-% LLNCS macro package for Springer Computer Science proceedings;
-% Version 2.20 of 2017/10/04
-%
-\documentclass[runningheads]{llncs}
-\usepackage{amsmath}
-\usepackage{hyperref}
-%
+\documentclass[12pt]{article}
+
+% Load necessary packages
+\usepackage{geometry}
 \usepackage{graphicx}
-% Used for displaying a sample figure. If possible, figure files should
-% be included in EPS format.
-%
-% If you use the hyperref package, please uncomment the following line
-% to display URLs in blue roman font according to Springer's eBook style:
-% \renewcommand\UrlFont{\color{blue}\rmfamily}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+
+% Set page margins
+\geometry{left=3cm, right=3cm, top=2cm, bottom=2cm}
+
+% Define colors for hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    citecolor=blue
+}
 
 \begin{document}
-%
-\title{Distributed Teams Are Founded on Explicit
-Communication Channels}
-%
-%\titlerunning{Abbreviated paper title}
-% If the paper title is too long for the running head, you can set
-% an abbreviated paper title here
-%
+
+% Title Section
+\title{\textbf{Distributed Teams Are Founded on Explicit
+Communication Channels}}
 \author{Chetan Panchal}
-%
+\date{} %
+\maketitle
 
-%
-\institute{Computer Science and Software Engineering , Concordia University \\ 
-\vspace{10pt}  VCS: Github: \href{https://github.com/chetanpanchal27/SOEN6841-TAS}{https://github.com/chetanpanchal27/SOEN6841-TAS}}
+% Table of Contents
+\tableofcontents
+\newpage
 
-%
-%
-\maketitle              % typeset the header of the contribution
-%
+% Abstract Section
+\section*{Abstract}
 
+This case study, authored by Juan Pablo Buriticá, emphasizes the critical importance of explicit communication channels in managing distributed teams. As teams grow and spread across various locations, maintaining productivity and efficient management becomes a challenge. The study highlights the necessity of deliberate selection of communication types and channels, particularly in the context of the increasing popularity of remote work. The primary advantage of such explicit communication strategies is enhanced productivity, as it reduces time wasted in seeking information and minimizes unnecessary interruptions.\\
+\\The study suggests the use of asynchronous communication channels, like collaborative documents, forums, and emails, for non-urgent information exchange. These channels are effective for situations where real-time interaction is not crucial, thus aiding in avoiding disruptions and facilitating better focus. Conversely, when real-time idea exchange is essential, synchronous channels like group chats, in-person meetings, or video calls are recommended.\\
+\\Additionally, the study discusses the dual role of multichannel chats that can function both synchronously and asynchronously but warns against the expectation of constant availability. The case study also addresses the pitfalls of reliance on in-person communication in growing teams, advocating for a culture that prioritizes written communications and explicit communication protocols. This approach not only aligns with the dynamics of remote work but also prepares teams for scalable growth, as exemplified by the use of comprehensive onboarding materials like RFCs and checklists.\\
+\\In summary, this case study underlines the significance of explicit communication in distributed teams and presents strategies to optimize productivity, align team members, and prepare for organizational growth.
 
+\newpage
 
+\section{Introduction}
 
-    \begin{thebibliography}{8}
-        \bibitem{ref1}
-        Exploring the communication breakdown in global virtual teams. \url{https://www.sciencedirect.com/science/article/abs/pii/S0263786311000779}
-        \bibitem{ref2}
-        IThe Impact of Communication Delay and Medium on Team Performance and Communication in Distributed Teams \url{https://journals.sagepub.com/doi/abs/10.1177/1541931214581025} 
-        \bibitem{ref3}
-        Asynchronous Collaboration: Bridging the Cognitive Distance in Global Software Development Projects \url{https://ieeexplore.ieee.org/abstract/document/9247281}
-        \bibitem{ref4}
-        A Comparative Empirical Study of Communication in Distributed and Collocated Development Teams \url{https://ieeexplore.ieee.org/abstract/document/4638651}
-        \bibitem{ref5}
-        A study of the effect of communication channel and authority on group decision processes and outcomes \url{https://www.sciencedirect.com/science/article/abs/pii/S0167923698000487}
-        \bibitem{ref6}
-        Virtual team management: what is causing communication breakdown \url{https://www.taylorfrancis.com/chapters/edit/10.4324/9781315468174-15/virtual-team-management-causing-communication-breakdown-jane-lockwood}
-        \bibitem{ref7}
-        Onboarding software developers and teams in three globally distributed legacy projects \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/smr.1921}
-        \bibitem{ref8}
-        Cultural diversity and information and communication technology impacts on global virtual teams \url{https://www.sciencedirect.com/science/article/abs/pii/S0378720608000153}
-        \bibitem{ref9}
-        Multi-channel Data Acquisition and Wireless Communication FPGA-Based System, to Real-Time Remote Monitoring \url{https://ieeexplore.ieee.org/abstract/document/8241338}
-    \end{thebibliography}
-    
+\subsection{Motivation}
+\begin{itemize}
+  \item The shift towards remote work and the natural growth of companies necessitates effective management of distributed teams.
+  \item Challenges in maintaining productivity, alignment, and management efficiency in teams spread across different locations.
+  \item An increasing need to understand and implement explicit communication channels to cater to the changing dynamics of team structures and work environments.
+  \item The evolution of communication technologies and their impact on team dynamics, especially in a remote or distributed setting.
+\end{itemize}
+
+\subsection{Problem Statement}
+\begin{itemize}
+  \item Investigating the effectiveness of explicit communication channels in distributed teams, focusing on the impact on productivity and team management.
+  \item Understanding the balance between asynchronous and synchronous communication and its role in minimizing disruptions and enhancing team focus.
+  \item Addressing the challenges of reliance on in-person communication and the transition to more sustainable, scalable communication practices as teams grow.
+\end{itemize}
+
+\subsection{Objectives}
+\begin{itemize}
+  \item To establish clear guidelines and best practices for communication in distributed teams, enhancing overall productivity and team cohesion.
+  \item To provide a framework for choosing appropriate communication channels (asynchronous vs. synchronous) based on the team's needs and work nature.
+  \item To benefit team leaders, managers, and members by providing insights into effective communication strategies, facilitating better management and faster growth.
+  \item To prepare teams for scalable growth and change by advocating for a culture that prioritizes explicit communication and written mediums.
+\end{itemize}
+
+\section*{References}
+\addcontentsline{toc}{section}{References}
+\vspace*{-35pt}
+\renewcommand{\refname}{}
+
+\begin{thebibliography}{9}
+\bibitem{ref1}
+"Exploring the communication breakdown in global virtual teams," \emph{International Journal of Project Management}, [Online]. Available: \url{https://www.sciencedirect.com/science/article/abs/pii/S0263786311000779}.
+
+\bibitem{ref2}
+"The Impact of Communication Delay and Medium on Team Performance and Communication in Distributed Teams," \emph{Proceedings of the Human Factors and Ergonomics Society Annual Meeting}, [Online]. Available: \url{https://journals.sagepub.com/doi/abs/10.1177/1541931214581025}.
+
+\bibitem{ref3}
+"Asynchronous Collaboration: Bridging the Cognitive Distance in Global Software Development Projects," \emph{IEEE}, [Online]. Available: \url{https://ieeexplore.ieee.org/abstract/document/9247281}.
+
+\bibitem{ref4}
+"A Comparative Empirical Study of Communication in Distributed and Collocated Development Teams," \emph{IEEE}, [Online]. Available: \url{https://ieeexplore.ieee.org/abstract/document/4638651}.
+
+\bibitem{ref5}
+"A study of the effect of communication channel and authority on group decision processes and outcomes," \emph{Decision Support Systems}, [Online]. Available: \url{https://www.sciencedirect.com/science/article/abs/pii/S0167923698000487}.
+
+\bibitem{ref6}
+"Virtual team management: what is causing communication breakdown," in \emph{Language and Intercultural Communication in the Workplace}, J. Lockwood, Ed. Routledge, [Online]. Available: \url{https://www.taylorfrancis.com/chapters/edit/10.4324/9781315468174-15/virtual-team-management-causing-communication-breakdown-jane-lockwood}.
+
+\bibitem{ref7}
+"Onboarding software developers and teams in three globally distributed legacy projects," \emph{Software: Practice and Experience}, [Online]. Available: \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/smr.1921}.
+
+\bibitem{ref8}
+"Cultural diversity and information and communication technology impacts on global virtual teams," \emph{Information \& Management}, [Online]. Available: \url{https://www.sciencedirect.com/science/article/abs/pii/S0378720608000153}.
+
+\bibitem{ref9}
+"Multi-channel Data Acquisition and Wireless Communication FPGA-Based System, to Real-Time Remote Monitoring," \emph{IEEE}, [Online]. Available: \url{https://ieeexplore.ieee.org/abstract/document/8241338}.
+\end{thebibliography}
+
 \end{document}
